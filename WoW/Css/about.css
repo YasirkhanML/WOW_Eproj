@@ -1,0 +1,111 @@
+/* About Us Section */
+.about-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.about-list li {
+    font-size: 18px;
+    padding: 8px 0;
+    color: #16a085;
+    font-weight: bold;
+    position: relative;
+}
+
+.about-list li::before {
+    content: "✔";
+    color: #16a085;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.section-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2980b9;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-container {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e67e22;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #d35400;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+
+    .about-content p, .about-list li {
+        font-size: 16px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
